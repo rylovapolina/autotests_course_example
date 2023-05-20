@@ -13,10 +13,11 @@ def letter_stat(our_str):
             :return: letters_dict - словарь """
     letters_dict = {}
     for i in our_str:
-        if i in letters_dict:
-            letters_dict[i] = letters_dict[i] + 1
-        else:
-            letters_dict[i] = 1
+        letters_dict[i] = our_str.count(i)
+        # if i in letters_dict:
+        #     letters_dict[i] = letters_dict[i] + 1
+        # else:
+        #     letters_dict[i] = 1
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

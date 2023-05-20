@@ -12,13 +12,15 @@ def repeats(our_str):
                 :param: our_str - строка
                 :return: new_str - отформатированная строка """
     new_str = ''
-    letters_dict = {}
+    # letters_dict = {}
     for i in our_str:
-        if i in letters_dict:
-            letters_dict[i] = letters_dict[i] + 1
-        else:
-            letters_dict[i] = 1
-        new_str += i + f'_{letters_dict[i]}'
+        new_str += i
+        new_str += f'_{new_str.count(i)}'
+        # if i in letters_dict:
+        #     letters_dict[i] = letters_dict[i] + 1
+        # else:
+        #     letters_dict[i] = 1
+        # new_str += i + f'_{letters_dict[i]}'
     return new_str
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
