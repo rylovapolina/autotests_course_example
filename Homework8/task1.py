@@ -18,6 +18,7 @@ import unittest  # Не удалять
 
 
 def treatment_sum(our_tuple):
+    """ Функция складывает элементы кортежа и обрабатывает исключение"""
     if len(our_tuple) > 2:
         raise Exception('Много данных')
     try:

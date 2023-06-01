@@ -9,6 +9,7 @@
 
 # Здесь пишем код
 def segment(typlee1, typlee2):
+    """ Функция возвращает сумму всех координат, обрабатывает исключение и выводит текст исключения задом наперед"""
     try:
         return typlee1[0] + typlee1[1] + typlee2[0] + typlee2[1]
     except Exception as errors:
